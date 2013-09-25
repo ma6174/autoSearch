@@ -11,6 +11,9 @@
     "permissions": [
         "tabs", "http://*/*", "https://*/*", "storage"
     ],
+    "web_accessible_resources":[
+        "jquery.min.map"  
+    ],
     "content_scripts": [
         {
         "matches": [
@@ -22,9 +25,9 @@
             "highlight.css"
         ],
         "js": [
-            "background.js",
-            "jquery-1.10.2.min.js",
-            "jquery.highlight.js"
+            "jquery.min.js",
+            "jquery.highlight.js",
+            "background.js"
         ],
         "run_at": "document_end",
         "all_frames": true
