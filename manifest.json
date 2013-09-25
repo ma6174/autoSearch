@@ -1,0 +1,28 @@
+{
+    "name": "auto search",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "search",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title":"关键字自动高亮",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs", "http://*/*", "https://*/*", "storage"
+    ],
+    "content_scripts": [
+        {
+        "matches": [
+            "file:///*/*",
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": [
+            "background.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": true
+    }
+    ]
+}
