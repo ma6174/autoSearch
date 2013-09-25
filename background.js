@@ -6,4 +6,8 @@ function highlight(){
         }
     });
 };
-window.onload = highlight();
+$().ready(highlight());
+$("body").mousedown(function(){
+    $(this).removeHighlight();
+    highlight();
+});
