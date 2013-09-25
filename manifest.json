@@ -18,8 +18,13 @@
             "http://*/*",
             "https://*/*"
         ],
+        "css":[
+            "highlight.css"
+        ],
         "js": [
-            "background.js"
+            "background.js",
+            "jquery-1.10.2.min.js",
+            "jquery.highlight.js"
         ],
         "run_at": "document_end",
         "all_frames": true
