@@ -6,8 +6,20 @@ function highlight(){
         }
     });
 };
+function highlightSelection(){
+    var selectedText;
+    if(window.getSelection){
+        selectedText=window.getSelection();
+    }else if(document.selection){
+        selectedText=document.selection.createRange().text;
+    }
+    if(selectedText!=""){
+        $("body").highlight(selectedText.toString());
+    }
+}
 $().ready(highlight());
-$("body").mousedown(function(){
+$("body").mouseup(function(){
     $(this).removeHighlight();
     highlight();
+    highlightSelection();
 });
