@@ -8,11 +8,15 @@
         "default_title":"关键字自动高亮",
         "default_popup": "popup.html"
     },
+    "background": {
+        "page": "background.html"
+    }, 
     "permissions": [
-        "tabs", "http://*/*", "https://*/*", "storage"
+        "tabs", "http://*/*", "https://*/*", "storage","clipboardRead","clipboardWrite"
     ],
     "web_accessible_resources":[
-        "jquery.min.map"  
+        "jquery.min.map",
+        "clipboard.swf"
     ],
     "content_scripts": [
         {
@@ -27,7 +31,7 @@
         "js": [
             "jquery.min.js",
             "jquery.highlight.js",
-            "background.js"
+            "content.js"
         ],
         "run_at": "document_end",
         "all_frames": true
