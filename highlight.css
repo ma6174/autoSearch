@@ -2,3 +2,11 @@
     color:red !important;
     background-color:yellow !important;
 }
+#ma6174-tip{
+    position:absolute;
+    width:60px;
+    height:40px;
+}
+#ma6174-tip a{
+    color:green;
+}

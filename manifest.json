@@ -12,11 +12,10 @@
         "page": "background.html"
     }, 
     "permissions": [
-        "tabs", "http://*/*", "https://*/*", "storage","clipboardRead","clipboardWrite"
+        "<all_urls>","storage","clipboardWrite"
     ],
     "web_accessible_resources":[
-        "jquery.min.map",
-        "clipboard.swf"
+        "jquery.min.map"
     ],
     "content_scripts": [
         {
