@@ -16,11 +16,11 @@
 
 如下图所示
 
-![config.png](config.png)
+![img/config.png](img/config.png)
 
 ### 高亮效果
 
-![demo.png](demo.png)
+![img/demo.png](img/demo.png)
 
 上图中“高亮”和“关键字”已经设置为高亮，可以看到背景颜色是黄色，文字颜色是红色。
 
