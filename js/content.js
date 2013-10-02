@@ -42,10 +42,11 @@ function highlightSelection(event){
     }else if(document.selection){
         selectedText=document.selection.createRange().text;
     }
-    if(selectedText!=""){
-        chrome.extension.sendRequest({ text:selectedText.toString()});
+    selectedText = selectedText.toString().replace(/^\s+|\s+$/g, '');
+    if(selectedText.replace(" ","")!=""){
+        chrome.extension.sendRequest({ text:selectedText});
         openURL(selectedText.toString());
-        $("body").highlight(selectedText.toString(),{ element: 'span', className: 'ma6174-highlight' });
+        $("body").highlight(selectedText,{ element: 'span', className: 'ma6174-highlight' });
     }
 }
 $().ready(function(){
