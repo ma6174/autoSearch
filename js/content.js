@@ -32,6 +32,11 @@ function openURL(txt){
             "href":"http://baidu.com/s?wd="+txt,
             "target":"_blank"
         }).appendTo($("#ma6174-tip"));
+        $("<br />").appendTo($("#ma6174-tip"));
+        $("<a></a>").text("有道翻译").attr({
+            "href":"http://dict.youdao.com/search?q="+txt,
+            "target":"_blank"
+        }).appendTo($("#ma6174-tip"));
     }
 }
 function highlightSelection(event){
