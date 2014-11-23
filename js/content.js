@@ -58,9 +58,9 @@ $().ready(function(){
     highlight();
     $("<div id='ma6174-tip'></div>").appendTo($("body"));
 });
-$("body").click(function(event){
-    $(this).unhighlight({ element: 'span', className: 'ma6174-highlight' });
-    highlight();
-    highlightSelection(event);
-    return true;
-});
+//$("body").click(function(event){
+//    $(this).unhighlight({ element: 'span', className: 'ma6174-highlight' });
+//    highlight();
+//    highlightSelection(event);
+//    return true;
+//});
